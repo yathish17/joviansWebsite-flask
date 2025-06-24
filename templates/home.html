@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cavotec Connect</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"> 
+    <style>
+      #banner{
+        height: 360px;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      /* body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+        color: #000;
+      }
+
+      .header {
+        background-color: #0089cf;
+        padding: 10px;
+        text-align: left;
+      }
+
+      .logo {
+        height: 40px;
+      }
+
+      .banner img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .container {
+        padding: 20px 40px;
+      }
+
+      .section-title {
+        font-size: 22px;
+        font-weight: bold;
+        border-bottom: 3px solid #0089cf;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 15px;
+      }
+
+      th, td {
+        text-align: left;
+        padding: 12px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      th {
+        font-weight: bold;
+      }
+
+      .warning-icon {
+        color: red;
+        font-weight: bold;
+        margin-right: 5px;
+      }
+
+      a {
+        color: #0089cf;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      } */
+    </style>
+  </head>
+  
+  <body>
+    <div class= "container">
+      
+    
+   <h1 class="text-center  mt-2, mb-4">{{company_name}} Connect</h1>
+      <!-- <header class="header">
+        <img src="https://c3b23840-7310-45fe-b47e-6b6a6a24d805-00-3c0rjg78tt8pc.sisko.replit.dev/static/logo.jpg" alt="Cavotec Logo" class="logo" />
+      </header>
+
+      <div class="banner">
+        <img class="img-fluid" id="banner" src="https://c3b23840-7310-45fe-b47e-6b6a6a24d805-00-3c0rjg78tt8pc.sisko.replit.dev/static/banner2.jpg" height= "400" alt="Banner Image" />
+      </div> -->
+
+      <!-- <main class="container">
+        <h2 class="section-title">Account overview</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>End user</th>
+              <th>Site name</th>
+              <th>SLA status</th>
+              <th>Data consent</th>
+              <th>Site health</th>
+              <th>Site data quality</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tt-line company pty. ltd.</td>
+              <td>Spirit of tasmania i</td>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>-</td>
+              <td><span class="warning-icon">❗</span> <a href="#">View details</a></td>
+            </tr>
+            <tr>
+              <td>Tt-line company pty. ltd.</td>
+              <td>Spirit of tasmania ii</td>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>-</td>
+              <td><span class="warning-icon">❗</span> <a href="#">View details</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </main> -->
+
+    <img class="img-fluid" id="banner" src="https://c3b23840-7310-45fe-b47e-6b6a6a24d805-00-3c0rjg78tt8pc.sisko.replit.dev/static/banner2.jpg" height= "400">
+  <h2 class="text-center mt-2, mb-4"">About Cavotec</h2>
+    <p class="lead">
+      Cavotec wants to contribute to a future world that is cleaner, safer and more efficient by providing innovative connection and electrification solutions to enable the decarbonization of ports and industrial applications. 
+
+      We thrive by shaping future expectations in the areas we are active in. Our credibility comes from our application expertise, dedication to innovation and world class operations. Our success rests on the core values we live by; Integrity, Accountability, Performance and Team Work.
+
+      Cavotec’s personnel, located in some 30 countries around the world, represent a large number of cultures, and provide customers with local support, backed by the Group’s global network of engineering expertise.
+    </p>
+    <h2 class="text-center mt-2, mb-4"">Job Openings</h2>
+    <div>
+      { % for job in jobs %}
+      <div>{{job['title']}}</div>
+      { % endfor %}
+    </div>
+      
+      
+    <div class = "text-center">
+      <button class="btn btn-primary btn-lg">Contact Us</button>
+
+      <p class="mt-4">Copyright 2025, Cavotec</p>
+    </div>
+      </div>
+  </body>
+</html>

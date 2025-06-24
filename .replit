@@ -1,15 +1,6 @@
-modules = ["python-3.11"]
+language = "python3"
+run = "python app.py"
 
-[nix]
-
-[workflows]
-runButton = "Run Flask App"
-
-[[workflows.workflow]]
-name = "Run Flask App"
-author = 37198238
-mode = "sequential"
-
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "python app.py"
+[[ports]]
+localPort = 5000
+externalPort = 80
